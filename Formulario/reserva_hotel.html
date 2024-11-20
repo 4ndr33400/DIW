@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de Reserva - Hotel Paradiso</title>
+    </head>
+    <body>
+        <div>
+            <h1>Reserva tu habitacion en Hotel Paradiso</h1>
+            <p>Rellene el siguiente formulario</p>
+
+            <form action="/my-handling-form-page" method="post">
+
+            <label for="FullName">Nombre completo:</label><br>
+            <input type="text" id="FullName" placeholder="Introduce tu nombre completo">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Introduce tu correo electronico">
+            
+            <label for="phoneNumber">Numero de telefono:</label>
+            <input type="tel" id="phoneNumber" placeholder="Introduce tu numero de teléfono">
+            
+            <label for="incomeDate"></label>
+            <input type="date" id="incomeDate">
+            
+            <label for="leaveDate"></label>
+            <input type="date" id="leaveDate">
+            
+            <label for="roomType">Opciones disponibles:</label>
+            <select id="roomType">
+                <option value=" -- "> -- </option>
+                <option value="individual">Habitación Individual</option>
+                <option value="double">Habitación Doble</option>
+                <option value="suite">Suite</option>
+            </select>  
+            
+            <label for="numberGuest">Numero de huéspedes</label>
+            <input type="number" id="numberGuest">
+            
+            <label for="arrivalTime">Hora de llegada</label>
+            <input type="time" id="arrivalTime">
+            
+            <label>Servicios adicionales</label>
+            <label for="includeBreakfast">Desayuno incluido</label>
+            <input type="checkbox" id="includeBreakfast" value="breakfast">
+            <label for="freeParking">Parking gratuito</label>
+            <input type="checkbox" id="freeParking" value="parking">
+            <label for="extraBed">Cama supletoria</label>
+            <input type="checkbox" id="extraBed" value="bed">
+
+            <label for="additionalComents">Comentarios adicionales</label>
+            <input type="text" id= "additionalComents" placeholder="Escribe tus cometarios aqui">
+            
+            <label for="preferedColor"></label>
+            <input type="color" id="preferedColor">
+        
+        
+        
+        </form>
+        </div>
+    </body>
+</html>
