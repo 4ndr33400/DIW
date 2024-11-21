@@ -3,60 +3,75 @@
     <head>
         <meta charset="UTF-8">
         <title>Formulario de Reserva - Hotel Paradiso</title>
+        <link rel="stylesheet" href="Formulario.css">
     </head>
     <body>
-        <div>
+        <div class="container">
             <h1>Reserva tu habitacion en Hotel Paradiso</h1>
-            <p>Rellene el siguiente formulario</p>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre completo" required>
+                <br><br>
 
-            <form action="/my-handling-form-page" method="post">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+                <br><br>
 
-            <label for="FullName">Nombre completo:</label><br>
-            <input type="text" id="FullName" placeholder="Introduce tu nombre completo">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Introduce tu correo electronico">
-            
-            <label for="phoneNumber">Numero de telefono:</label>
-            <input type="tel" id="phoneNumber" placeholder="Introduce tu numero de teléfono">
-            
-            <label for="incomeDate"></label>
-            <input type="date" id="incomeDate">
-            
-            <label for="leaveDate"></label>
-            <input type="date" id="leaveDate">
-            
-            <label for="roomType">Opciones disponibles:</label>
-            <select id="roomType">
-                <option value=" -- "> -- </option>
-                <option value="individual">Habitación Individual</option>
-                <option value="double">Habitación Doble</option>
-                <option value="suite">Suite</option>
-            </select>  
-            
-            <label for="numberGuest">Numero de huéspedes</label>
-            <input type="number" id="numberGuest">
-            
-            <label for="arrivalTime">Hora de llegada</label>
-            <input type="time" id="arrivalTime">
-            
-            <label>Servicios adicionales</label>
-            <label for="includeBreakfast">Desayuno incluido</label>
-            <input type="checkbox" id="includeBreakfast" value="breakfast">
-            <label for="freeParking">Parking gratuito</label>
-            <input type="checkbox" id="freeParking" value="parking">
-            <label for="extraBed">Cama supletoria</label>
-            <input type="checkbox" id="extraBed" value="bed">
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número de teléfono" required>
+                <br><br>
 
-            <label for="additionalComents">Comentarios adicionales</label>
-            <input type="text" id= "additionalComents" placeholder="Escribe tus cometarios aqui">
+                <label for="fecha_llegada">Fecha de llegada:</label>
+                <input type="date" id="fecha_llegada" name="fecha_llegada" required>
+                <br><br>
+
+                <label for="fecha_salida">Fecha de salida:</label>
+                <input type="date" id="fecha_salida" name="fecha_salida" required>
+                <br><br>
+
+                <label for="habitacion">Tipo de habitación:</label>
+                <select id="habitacion" name="habitacion" required>
+                  <option value="individual">Habitación Individual</option>
+                  <option value="doble">Habitación Doble</option>
+                  <option value="suite">Suite</option>
+                </select>
+                <br><br>
             
-            <label for="preferedColor"></label>
-            <input type="color" id="preferedColor">
-        
-        
-        
-        </form>
+                <label for="huespedes">Número de huéspedes:</label>
+                <input type="number" id="huespedes" name="huespedes" required min="1" max="10">
+                <br><br>
+
+                <label for="hora_llegada">Hora de llegada (opcional):</label>
+                <input type="time" id="hora_llegada" name="hora_llegada">
+                <br><br>
+
+                <fieldset>
+                  <legend>Servicios adicionales:</legend>
+                  <label><input type="checkbox" name="servicios" value="desayuno"> Desayuno incluido</label>
+                  <label><input type="checkbox" name="servicios" value="aparcamiento"> Aparcamiento gratuito</label>
+                  <label><input type="checkbox" name="servicios" value="cama"> Cama supletoria</label>
+                </fieldset>
+                <br><br>
+            
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí..."></textarea>
+                <br><br>
+
+                <label for="color_preferido">Color preferido para la decoración:</label>
+                <select id="color_preferido" name="color_preferido">
+                  <option value="beige">Beige</option>
+                  <option value="lightblue">Azul Claro</option>
+                  <option value="lightgray">Gris Suave</option>
+                  <option value="white">Blanco</option>
+                  <option value="mintgreen">Verde Menta</option>
+                </select>
+                <br><br>
+
+                <label><input type="checkbox" name="privacidad" required> He leído y acepto la política de privacidad.</label>
+                <br><br>
+
+                <button type="submit">Confirmar Reserva</button>
+            </form>
         </div>
     </body>
 </html>
