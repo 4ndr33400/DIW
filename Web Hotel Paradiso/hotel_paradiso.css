@@ -6,7 +6,7 @@ body{
 header{
     text-align: center;
     background-color: #003366;
-    font-size: 36px;
+    font-size: 25px;
     color: #ffffff;
 }
 header img{
@@ -61,4 +61,36 @@ h2{
     width: 800px; 
     height: 800px;
     margin-top: 50px;
+}
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+footer .social {
+    margin: 10px 0;
+}
+footer .icon {
+    margin: 0 5px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+footer .icon:hover {
+    transform: scale(1.2);
+}
+footer .icon:active {
+    color: #FFD700;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer a:active {
+    color: #FFD700;
 }

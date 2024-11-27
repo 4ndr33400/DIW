@@ -6,7 +6,7 @@ body{
 header{
     text-align: center;
     background-color: #003366;
-    font-size: 36px;
+    font-size: 25px;
     color: #ffffff;
 }
 header img{
@@ -47,36 +47,68 @@ nav ul li a:focus{
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
-
-h2 {
-    color: #003366; 
+.info-hotel {
+    padding: 100px;
+    text-align: center;
+    background-color: #f9f9f9;
 }
-.contact-form {
+.info-hotel h2 {
+    font-size: 27px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+.info-hotel p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+.info-hotel a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.map-container {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column; 
+    justify-content: center;
 }
-
-label {
-    margin-bottom: 5px;
-}
-
-input, textarea {
-    margin-bottom: 15px; 
-    padding: 10px; 
-    border: 1px solid #E07A5F; 
-    border-radius: 4px; 
-}
-
-button {
-    background-color: #FF808B; 
-    color: white; 
-    padding: 10px;
+.map-container iframe {
     border: none;
-    border-radius: 4px;
-    cursor: pointer; 
-    transition: background-color 0.3s; 
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 8px;
 }
-
-button:hover {
-    background-color: #E07A5F; 
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+footer .social {
+    margin: 10px 0;
+}
+footer .icon {
+    margin: 0 5px;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+footer .icon:hover {
+    transform: scale(1.2);
+}
+footer .icon:active {
+    color: #FFD700;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer a:active {
+    color: #FFD700;
 }
