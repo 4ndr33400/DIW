@@ -1,0 +1,28 @@
+body{
+    perspective: 500px;
+}
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: #FF0000;
+    animation: rotation3D 6s linear infinite;
+    animation-delay: 1s;
+    margin: auto;
+}
+@keyframes 
+rotation3D {
+    0%{
+        transform: rotateY(0deg)
+    }
+    49%{
+        background-color: #FF0000;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: blue;
+        transform: rotateY(180deg);
+    }
+
+}

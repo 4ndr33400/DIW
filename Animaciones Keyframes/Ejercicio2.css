@@ -1,0 +1,16 @@
+.circulo{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    animation: moveCircle 5s ease-in-out infinite;
+}
+@keyframes
+moveCircle{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(3000px);    
+    }
+}
