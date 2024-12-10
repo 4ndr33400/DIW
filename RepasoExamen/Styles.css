@@ -1,0 +1,52 @@
+.circle{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    animation: circleAnimation 3s infinite;
+    
+}
+@keyframes 
+circleAnimation {
+    0%{
+        transform: scale(50%);
+    }
+    25%{
+        background-color: darkred;
+    }
+    50%{
+        background-color: darkblue;
+    }    
+    100%{
+        transform: scale(100%);
+        background-color: darkolivegreen;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: auto;
+    gap :2px;
+    margin-right: 300px;
+    margin-left: 300px;
+
+}
+.container div{
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.cell1{
+    grid-row: 1;
+    grid-column: 1/4;
+    background-color: lightslategrey;
+}
+.cell5{
+    grid-column: 1/4;
+}
+form{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 200px;
+    margin-right: 200px;
+}
