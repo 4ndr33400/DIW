@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center; 
+}
+
+h1 {
+    margin: 20px 0; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+    margin: 0 auto; 
+    max-width: 1300px; 
+}
+
+.container div {
+    border: 4px double blue;
+    border-radius: 10px;
+}
+
+#enterprise {
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+#advertisment {
+    grid-column: 1/3;
+    grid-row: 2;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    text-align: left;
+}
+
+.price {
+    color: blue;
+}
