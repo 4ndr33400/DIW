@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center; 
+}
+
+h1 {
+    margin: 20px 0; 
+}
+
+.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 10px; 
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1300px;
+}
+
+.container div {
+    border: 4px double blue;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+#community, #professional, #enterprise {
+    flex: 1 1 300px; 
+    max-width: 400px; 
+}
+
+#advertisment {
+    flex: 1 1 500px; 
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+.price {
+    color: blue;
+}
