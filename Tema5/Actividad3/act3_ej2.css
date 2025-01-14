@@ -1,0 +1,57 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px; /* Por defecto para pantallas mayores a 1000px */
+    font-size: 30px; /* Por defecto para pantallas mayores a 1000px */
+    background-color: white; /* Por defecto para pantallas mayores a 1000px */
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: inherit;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Media query para pantallas menores a 1000px */
+@media (max-width: 1000px) {
+    body {
+        background-color: yellow;
+        padding: 30px;
+        font-size: 20px;
+    }
+}
+
+/* Media query para pantallas menores a 660px */
+@media (max-width: 660px) {
+    body {
+        background-color: lightblue;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
